@@ -1,12 +1,9 @@
 extends layouts/LayoutTheme
 include mixins/home/landing/HeroHeader
-include mixins/home/landing/FindYourPassion
-include mixins/home/landing/MillionsOfJobs
-include mixins/home/landing/Category
-include mixins/home/landing/Features
-include mixins/home/landing/ComeOnJoin
-include mixins/home/landing/Testimonial
-include mixins/home/landing/Footer
+include mixins/home/landing/Resources
+include mixins/home/landing/OurLibraries
+include mixins/home/landing/BestSeller
+//- include mixins/home/landing/Footer
 
 
 append variables
@@ -17,10 +14,7 @@ prepend scripts
 
 append content
   +HeroHeader
-  +FindYourPassion
-  +MillionsOfJobs
-  +Categories
-  +Features
-  +ComeOnJoin
-  +Testimonials
-  +Footer
+  +Resources
+  +OurLibraries
+  +BestSellers
+  //- +Footer

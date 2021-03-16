@@ -8,20 +8,8 @@ mixin Footer
   section.py-0.bg-primary-gradient
     +Background({ image: `${CWD}assets/img/illustrations/footer-bg.png`, attrs: { style: { 'background-position': 'center', 'background-size': 'cover'} }, className: '' })
     .container
-      .row.flex-center.py-8
-        .col-lg-6.mb-4.text-center
-          h1.text-white Get started now
-        .col-lg-6.d-flex.justify-content-lg-end.justify-content-center
-          form.row.row-cols-lg-auto.g-0.align-items-center
-            .col-9.col-lg-8
-              label.visually-hidden(for='colFormLabel') Username
-              .input-group
-                input#colFormLabel.rounded-end-0.form-control(type='email' placeholder='email address')
-            .col-3.col-lg-4
-              button.btn.btn-primary.rounded-start-0(type='submit') Submit
-    
-
-      .row.justify-content-lg-between
+      
+      .row.justify-content-lg-between.py-5
         .col-6.col-sm-4.col-lg-auto.mb-3
           h5.mb-5.text-white CATEGORIES  
           ul.list-unstyled.mb-md-4.mb-lg-0

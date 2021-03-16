@@ -49,7 +49,7 @@ $gray-700:  #7D7987 !default;
 $gray-800: #616368 !default;
 $gray-900: #4F5665 !default;
 $gray-1000: #112D58 !default;
-$gray-1100: #1F1534 !default;
+$gray-1100: #44224B !default;
 $black: #000 !default;
 
 $grays: () !default;
@@ -77,11 +77,11 @@ $grays: map-merge(
 //-----------------------------------------------*/
 $blue: #1F3A63 !default;
 $indigo: #53ACF8 !default;
-$purple: #ad45f6 !default;
+$purple: #723182 !default;
 $pink: #f6458e !default;
 $red: #F55767 !default;
 $orange: #f6d845 !default;
-$yellow: #FFA024 !default;
+$yellow: #FDC800 !default;
 $green: #40975F !default;
 $teal: #299EF3 !default;
 $cyan: #3EB8F4 !default;
@@ -90,7 +90,7 @@ $light: #F9FAFD !default;
 //*-----------------------------------------------
 //|   Theme Colors
 //-----------------------------------------------*/
-$primary: $blue !default;
+$primary: $purple !default;
 $secondary: $gray-900 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -228,7 +228,7 @@ $border-radius-lg: 1.25rem !default;
 //*-----------------------------------------------
 //|   Fonts Families
 //-----------------------------------------------*/
-$font-family-sans-serif: 'Poppins', 'Open Sans', -apple-system, BlinkMacSystemFont,
+$font-family-sans-serif: 'Playfair Display', 'Open Sans', -apple-system, BlinkMacSystemFont,
   'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
   'Segoe UI Emoji', 'Segoe UI Symbol' !default;
 $font-family-monospace: 'SFMono-Regular', Menlo, Monaco, Consolas,
@@ -281,7 +281,7 @@ $h6-font-size: map_get($font-sizes, '-1') !default;
 
 $headings-font-family: $font-family-sans-serif !default;
 $headings-font-weight: $font-weight-medium !default;
-$headings-color: $gray-1000 !default;
+$headings-color: $gray-1100 !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: () !default;
@@ -342,7 +342,7 @@ $navbar-font-size: $font-size-base * 0.8 !default;
 
 $navbar-light-color: rgba($black, 0.95) !default;
 $navbar-light-hover-color: rgba($black, 0.95) !default;
-$navbar-light-active-color: $dark !default;
+$navbar-light-active-color: $primary !default;
 $navbar-light-disabled-color: rgba($black, 0.25) !default;
 
 $navbar-dark-color: rgba($white, .7) !default;
@@ -439,12 +439,12 @@ $carousel-control-next-icon-bg:      url("data:image/svg+xml,%3Csvg xmlns='http:
 // Accordion
 $accordion-padding-y:                     1.5rem !default;
 $accordion-padding-x:                     2.6rem !default;
-$accordion-bg:                            $gray-100 !default;
+$accordion-bg:                            $white !default;
 $accordion-border-width:                  $border-width !default;
 $accordion-border-color:                  rgba($white, .125) !default;
 $accordion-border-radius:                 0 !default;
 
-$accordion-button-active-bg:              $gray-100 !default;
+$accordion-button-active-bg:              $white !default;
 $accordion-button-active-color:           $dark !default;
 
 $accordion-button-focus-border-color:     $white !default;
@@ -453,5 +453,5 @@ $accordion-button-focus-box-shadow:       $light !default;
 $accordion-icon-width:                    1.8rem !default;
 $accordion-icon-active-color:             $dark !default;
 
-$accordion-button-icon:         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E") !default;
-$accordion-button-active-icon:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E") !default;
+$accordion-button-icon:         url("") !default;
+$accordion-button-active-icon:  url("") !default;
