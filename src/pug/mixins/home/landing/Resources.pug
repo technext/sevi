@@ -24,7 +24,6 @@ append variables
     ]
 
 
-
 mixin Resource(config) 
   .col-sm-6.col-lg-3.mb-4.mb-lg-0.text-center
     .px-0.px-lg-3
@@ -32,14 +31,12 @@ mixin Resource(config)
       h3.h5.mb-4.font-base=config.title
       p.lh-lg=config.text
 
-
 mixin Resources
   +Section
     .row.justify-content-center
-      .col-auto.mb-5.mb-md-8
+      .col-auto.mb-5.mb-md-7
         h1.fw-semi-bold.text-warning Our 
           span.text-1100 resources
-
     .row
       each item in resources
         +Resource(item)       

@@ -39,17 +39,18 @@ $grid-gutter-width: 2rem !default;
 //-----------------------------------------------*/
 
 $white: #fff !default;
-$gray-100:#F5F7FA  !default;
-$gray-200: #EBEBED !default;
-$gray-300: #E1E0E4 !default;
-$gray-400: #D7D6DA !default;
-$gray-500: #CDCCD1 !default;
-$gray-600:  #C3C1C8 !default;
-$gray-700:  #7D7987 !default;
-$gray-800: #616368 !default;
-$gray-900: #4F5665 !default;
-$gray-1000: #112D58 !default;
+$gray-100: #F1f0f2  !default;
+$gray-200: #E8E5E9 !default;
+$gray-300: #DFDBDF !default;
+$gray-400: #D5D1D6 !default;
+$gray-500: #CCC6CD !default;
+$gray-600:  #C3BCC4 !default;
+$gray-700:  #B9B1BB !default;
+$gray-800: #B0A7B2 !default;
+$gray-900: #A79CA8 !default;
+$gray-1000: #778295 !default;
 $gray-1100: #44224B !default;
+$gray-1200: #091E40 !default;
 $black: #000 !default;
 
 $grays: () !default;
@@ -67,6 +68,7 @@ $grays: map-merge(
     '900': $gray-900,
     '1000': $gray-1000,
     '1100': $gray-1100,
+    '1200': $gray-1200,
     'white': $white,
   ),
   $grays
@@ -210,7 +212,7 @@ $spacers: map-merge(
 //|   Body
 //-----------------------------------------------*/
 $body-bg: $white !default;
-$body-color: $gray-700 !default;
+$body-color: $gray-1000 !default;
 
 //*-----------------------------------------------
 //|   Link
@@ -281,7 +283,7 @@ $h6-font-size: map_get($font-sizes, '-1') !default;
 
 $headings-font-family: $font-family-sans-serif !default;
 $headings-font-weight: $font-weight-medium !default;
-$headings-color: $gray-1100 !default;
+$headings-color: $gray-1200 !default;
 
 // scss-docs-start display-headings
 $display-font-sizes: () !default;
@@ -315,8 +317,10 @@ $blockquote-font-size: $font-size-lg !default;
 //*-----------------------------------------------
 //|   Buttons and Forms
 //-----------------------------------------------*/
+$input-bg           :  tint-color($primary, 90) !default;
+$input-placeholder-color:     tint-color($primary, 40) !important;
 $input-btn-padding-y: .56rem !default;
-$input-btn-padding-x: .80rem !default;
+$input-btn-padding-x: 1.80rem !default;
 
 $input-btn-padding-y-sm: .10rem !default;
 $input-btn-padding-x-sm: 0.5rem !default;

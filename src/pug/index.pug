@@ -3,7 +3,8 @@ include mixins/home/landing/HeroHeader
 include mixins/home/landing/Resources
 include mixins/home/landing/OurLibraries
 include mixins/home/landing/BestSeller
-//- include mixins/home/landing/Footer
+include mixins/home/landing/Cta
+include mixins/home/landing/Footer
 
 
 append variables
@@ -11,10 +12,10 @@ append variables
 
 prepend scripts
   
-
 append content
   +HeroHeader
   +Resources
   +OurLibraries
   +BestSellers
-  //- +Footer
+  +Cta
+  +Footer
